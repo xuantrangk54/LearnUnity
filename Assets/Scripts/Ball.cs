@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
+    GameController gameController;
+
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("START OF BALL");
+        this.gameController = FindObjectOfType<GameController>();
     }
 
     // Update is called once per frame
@@ -21,14 +23,17 @@ public class Ball : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             Destroy(this.gameObject);
-            Debug.Log("HAVE DIEM");
+            this.gameController.IncrementScore();
         } 
     }
     private void OnTriggerEnter2D (Collider2D col)
     {
         if (col.CompareTag("DeathZone"))
         {
-            Debug.Log("DIE");
+            if (gameController)
+            {
+                this.gameController.SetGameOver(true);
+            }
             Destroy(this.gameObject);
         }
     }
