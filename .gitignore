@@ -2,7 +2,7 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-output
+/output/
 
 /[Ll]ibrary/
 /[Tt]emp/
@@ -11,7 +11,7 @@ output
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-output
+
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
