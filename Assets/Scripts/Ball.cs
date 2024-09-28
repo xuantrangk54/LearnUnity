@@ -18,20 +18,18 @@ public class Ball : MonoBehaviour
 
     private void OnCollisionEnter2D (Collision2D col)
     {
-        Debug.Log("VA CHAM");
         if (col.gameObject.CompareTag("Player"))
         {
+            Destroy(this.gameObject);
             Debug.Log("HAVE DIEM");
-        } else if (col.gameObject.CompareTag("DeathZone"))
-        {
-            Debug.Log("DIE");
-        }
+        } 
     }
     private void OnTriggerEnter2D (Collider2D col)
     {
         if (col.CompareTag("DeathZone"))
         {
             Debug.Log("DIE");
+            Destroy(this.gameObject);
         }
     }
 }
