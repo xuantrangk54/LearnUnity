@@ -26,9 +26,7 @@ public class Manager : MonoBehaviour
         Debug.Log("Correct answer");
         if (currentLevel + 1 != Levels.Length)
         {
-            Levels[currentLevel].SetActive(false);
-            currentLevel++;
-            Levels[currentLevel].SetActive(true);
+    
         }
     }
 }
