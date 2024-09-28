@@ -16,6 +16,16 @@ public class GameController : MonoBehaviour
     {
         this.m_spawmTimeLeft = 0;
         this.uIManager = FindObjectOfType<UIManager>();
+        this.uIManager.ShowGameOverPanel(false);
+    }
+
+    public void Replay ()
+    {
+        Debug.Log("REPLAY CLICK");
+        this.m_score = 0;
+        this.m_isGameOver = false;
+        this.uIManager.SetScoreText("Score: " + m_score);
+        this.uIManager.ShowGameOverPanel(false);
     }
 
     // Update is called once per frame
