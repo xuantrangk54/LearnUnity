@@ -1,0 +1,54 @@
+{
+    "questions": [
+        {
+            "question": "2+3=?",
+            "answers": [
+                "1",
+                "2",
+                "5",
+                "9"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "2+3=?",
+            "answers": [
+                "12",
+                "3",
+                "5",
+                "5"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "2+3=?",
+            "answers": [
+                "5",
+                "5",
+                "2",
+                "5"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "2+3=?",
+            "answers": [
+                "7",
+                "6",
+                "4",
+                "4"
+            ],
+            "correctAnswer": 3
+        },
+        {
+            "question": "2+3=?",
+            "answers": [
+                "14",
+                "25",
+                "54",
+                "94"
+            ],
+            "correctAnswer": 3
+        }
+    ]
+}
